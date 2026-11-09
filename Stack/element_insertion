@@ -1,0 +1,31 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int stack[100], top = -1;
+    int n, value;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++) {
+        if(top == 99) {
+            cout << "Stack Overflow";
+            break;
+        }
+
+        cout << "Enter value: ";
+        cin >> value;
+
+        top++;
+        stack[top] = value;
+    }
+
+    cout << "Stack: ";
+    for(int i = top; i >= 0; i--) {
+        cout << stack[i] << " ";
+    }
+
+    return 0;
+}
