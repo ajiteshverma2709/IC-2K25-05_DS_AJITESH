@@ -1,0 +1,38 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n, e;
+    int adj[20][20] = {0};
+
+    cout << "Enter vertices: ";
+    cin >> n;
+
+    cout << "Enter edges: ";
+    cin >> e;
+
+    for (int i = 0; i < e; i++) {
+
+        int u, v;
+        cin >> u >> v;
+
+        adj[u][v] = 1;
+        adj[v][u] = 1;
+    }
+
+    for (int i = 0; i < n; i++) {
+
+        int degree = 0;
+
+        for (int j = 0; j < n; j++) {
+            degree += adj[i][j];
+        }
+
+        cout << "Degree of vertex "
+             << i << " = " << degree << endl;
+    }
+
+    return 0;
+}
