@@ -1,0 +1,48 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int queue[100];
+    int front = -1, rear = -1;
+    int n;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    cout << "Enter elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> queue[i];
+        rear++;
+    }
+
+    if(n > 0)
+        front = 0;
+
+    if(front == -1) {
+        cout << "Queue Underflow";
+    }
+    else {
+        cout << "Deleted element: " << queue[front];
+
+        if(front == rear) {
+            front = rear = -1;
+        }
+        else {
+            front++;
+        }
+    }
+
+    cout << "\nQueue after deletion: ";
+
+    if(front == -1) {
+        cout << "Empty";
+    }
+    else {
+        for(int i = front; i <= rear; i++) {
+            cout << queue[i] << " ";
+        }
+    }
+
+    return 0;
+}
