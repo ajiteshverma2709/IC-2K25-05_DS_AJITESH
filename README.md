@@ -1,4 +1,4 @@
-Data Structures and Algorithms (DSA) – Assignment Repository
+Data Structures and Algorithms (DSA) LAB
 
 Student Information
 
@@ -8,7 +8,7 @@ Course| Integrated MCA
 Class / Semester| 3rd Semester
 Roll Number| IC-2K25-05
 Programming Language| C++
-Subject| Data Structures and Algorithms
+Subject| Data Structures and Algorithms Lab
 Submitted To| Mr. Ajay Malviya
 
 ---
